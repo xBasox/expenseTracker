@@ -2,7 +2,7 @@ import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 import React, { useState } from "react";
 import "./components/NewExpense/NewExpense.css";
-import "../src/main.css"
+import "../src/main.css";
 
 const DUMMY_EXPENSES = [
   {
@@ -37,12 +37,14 @@ function App() {
 
   return (
     <div>
-      <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses expenses={expenses} />
-      <div className="new-expense">
-        <a href="https://xbasox.github.io/portfolio/work.html">
-          <button type="button">Go back</button>
-        </a>
+      <div className="container">
+        <NewExpense onAddExpense={addExpenseHandler} />
+        <Expenses expenses={expenses} />
+        <div className="new-expense">
+          <a href="https://xbasox.github.io/portfolio/work.html">
+            <button type="button">Go back</button>
+          </a>
+        </div>
       </div>
       <footer id="main-footer">
         Copyright <span class="text-secondary">iLLiev</span> &copy; 2022
