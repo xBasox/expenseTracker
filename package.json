@@ -1,11 +1,17 @@
 {
-  "name": "react-complete-guide",
-  "version": "0.1.0",
+  "name": "expense-tracker",
+  "version": "1.0.0",
   "private": true,
+  "description": "Track your expenses on a yearly chart",
+  "homepage":"https://xBasox.github.io/expenseTracker",
+  "scripts":{
+    "deploy": "gh-pages -d public"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "^5.0.1",
